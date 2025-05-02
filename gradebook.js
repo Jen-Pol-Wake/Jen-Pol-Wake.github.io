@@ -1,42 +1,20 @@
-<!DOCTYPE html>
-<html lang='en'>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device=width, initial-scale=1.0">
-        <title>Gradebook</title>
-        <style>
-            table {width: 100%;
-                border-collapse: collapse; 
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th{
-            background-color: #f4f4f4;
-        }
-        </style>
-    </head>
-    <body>
-        <h1>Gradebook</h1>
-        <table id="gradebook">     
-            <thead>
-                <tr>
-                    <th>Student Name</th>
-                    <th>Assignment 1</th>
-                    <th>Assignment 2</th>
-                    <th>Assignment 3</th>
-                    <!--Add more assignment columns as needed-->
-                </tr>
-            </thead>
-            <tbody>
-                <!--Rows will be populated dynamically with JavaScript-->
-            </tbody>
-        </table>
-        <script src="gradebook.js"></script>
-    </body>
-</html>
+// TODO:  Fetch data from the PostgreSQL database (to be implemented later)
+function FetchGradeData() {
+    // This function will query the PostgreSQL database and return grade data
+    console.log("Fetching grade data...");
+}
+
+// TODO:  Populate teh table with grade data 
+function populateGradebook(data) {
+    // This function will take the fetched grade data and populate the table
+    console.log("Populating gradebook with data:", data);
+}
+
+// TODO REMOVE THIS
+// Call the stubs to demonstrate teh workflow
+const gradeData = FetchGradeData();
+populateGradebook(gradeData);
+// END REMOVE
 
 //added for lab 14 full stack
 function fetchGradeData() {
@@ -89,4 +67,3 @@ function populateGradebook(data) {
         tableElm.appendChild(row);
         });
 }
-
